@@ -50,3 +50,9 @@
 .features__descr {
   padding-top: 126px;
 }
+
+@media screen and (max-width: 576px) {
+  .features_image {
+    display: none;
+  }
+}
