@@ -96,5 +96,6 @@
 @media screen and (max-width: 576px) {
   .slider__wrapper {
     margin: 0;
+    padding: 60px 20px 92px 20px;
   }
 }
