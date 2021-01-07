@@ -1,0 +1,36 @@
+.work {
+  padding: 140px 0 100px;
+}
+.work__description {
+  margin: 21px 0 60px;
+}
+.work__item {
+	display: flex;
+	margin-bottom: 30px;
+}
+.work__item span {
+  padding: 10px 16px;
+  height: 25px;
+  width: 25px;
+  border: 1px solid var(--color-gray);
+  color: var(--color-gray);
+  margin-right: 32px;
+  font-size: 16px;
+  line-height: 19px;
+}
+.work__info h3 {
+	font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: var(--color-black);
+}
+
+.work__info p {
+	margin-top: 10px;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-gray);
+}
+.work button + button {
+	margin-left: 16px;
+}

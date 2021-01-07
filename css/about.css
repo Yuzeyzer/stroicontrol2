@@ -1,0 +1,28 @@
+.about {
+  padding-top: 78px;
+  padding-bottom: 143px;
+}
+
+.about__row {
+  padding-top: 28px;
+  flex-wrap: wrap;
+}
+
+.about__title {
+  margin-bottom: 21px;
+}
+
+.about__suptitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--color-black);
+  margin-top: 67px;
+  margin-bottom: 20px;
+}
+
+.about__text {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-gray);
+}

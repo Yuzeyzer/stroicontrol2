@@ -1,0 +1,146 @@
+.header {
+  justify-content: space-between;
+  padding: 26px 31px;
+}
+.header,
+.logo__link,
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+.logo__link {
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: var(--color-black);
+}
+.logo__text {
+  margin-left: 8px;
+}
+.nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav__item {
+  margin-right: 22px;
+}
+.nav__item:last-child {
+  margin-right: 0;
+}
+.nav__link {
+  text-decoration: none;
+  color: var(--color-gray);
+  transition: 0.3s;
+}
+.nav__link:hover {
+  color: var(--color-blue);
+}
+.burger__menu {
+  position: fixed;
+  top: 2%;
+  right: 5%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-black);
+  border-radius: 50%;
+}
+.burger__menu span {
+  position: relative;
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: white;
+  transition: 0.1s;
+}
+
+.burger__menu span::before,
+.burger__menu span::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transform: translateY(-10px);
+  transition: 0.3s;
+}
+.burger__menu span::after {
+  transform: translateY(10px);
+}
+
+.burger__menu.is-active span {
+  height: 0;
+}
+
+.burger__menu.is-active span::before {
+  background-color: var(--color-black);
+  animation: 0.3s aki1 0.5s forwards;
+}
+
+.burger__menu.is-active span::after {
+  background-color: var(--color-black);
+  animation: 0.3s aki2 0.5s forwards;
+}
+main {
+  overflow: hidden;
+}
+@keyframes aki1 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(45deg);
+    background-color: white;
+  }
+}
+
+@keyframes aki2 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-45deg);
+    background-color: white;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .nav {
+    transform: translateX(100%);
+    transition: 1.5s;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color-orange);
+  }
+  .nav.is-active {
+    transform: translateY(0);
+  }
+  .nav .nav__list {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .nav .nav__list .nav__item {
+    margin: 25px 0 0;
+  }
+  .nav .nav__list .nav__item a {
+    color: var(--color-white);
+  }
+  .logo__text {
+    font-size: 18px;
+  }
+  .burger__menu {
+    display: flex;
+    z-index: 2;
+  }
+}

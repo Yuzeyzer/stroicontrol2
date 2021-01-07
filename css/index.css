@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+@import './variables.css';
+@import '../fonts/style.css';
+@import './header.css';
+@import './components.css';
+@import './hero.css';
+@import './advantages.css';
+@import './chaos.css';
+@import './order.css';
+@import './sponsors.css';
+@import './about.css';
+@import './delivery.css';
+@import './safety.css';
+@import './features.css';
+@import './work.css';
+@import './benefits.css';
+
+@import './vendors/slick.css';
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+}
+
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0 20px;
+  }
+}

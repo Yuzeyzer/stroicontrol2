@@ -1,0 +1,94 @@
+.benefits {
+  padding: 140px 0 100px;
+}
+.benefits__description {
+  margin: 21px 0 60px;
+}
+.benefits__item {
+  display: flex;
+  margin-bottom: 30px;
+}
+.benefits__item svg {
+  margin-right: 32px;
+  width: 148px;
+}
+.benefits__info h3 {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: var(--color-black);
+}
+
+.benefits__info p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-gray);
+}
+
+.slider__wrapper {
+  padding: 60px 87px 92px 87px;
+  background: #f6f8f9;
+  border-radius: 5px;
+  margin-right: -92px;
+  margin-left: 80px;
+}
+
+.slider__item {
+  outline: none;
+}
+
+.slider__item p {
+  font-size: 30px;
+  line-height: 48px;
+  color: var(--color-black);
+}
+
+.slider__inner {
+  padding-top: 28px;
+  display: flex;
+}
+.slider__inner img {
+  margin-right: 8px;
+  width: 48px;
+  height: 48px;
+}
+
+.slider__name {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--color-black);
+}
+
+.slider__position {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #72787d;
+}
+
+.benefits__row {
+  padding-top: 55px;
+}
+.benefits .slick-dots {
+  padding-top: 28px;
+  display: flex;
+  list-style: none;
+}
+
+.benefits .slick-dots button {
+  margin-right: 8px;
+  width: 12px;
+  height: 12px;
+  font-size: 0;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  background: rgba(3, 111, 199, 0.2);
+}
+.benefits .slick-dots .slick-active button {
+  background-color: var(--color-blue);
+}

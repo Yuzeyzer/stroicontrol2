@@ -1,0 +1,73 @@
+.safety {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  text-align: center;
+}
+
+.features_container {
+  position: relative;
+}
+.safety__title {
+  display: inline-block;
+  position: relative;
+}
+
+.safety__title::before {
+  content: '';
+  position: absolute;
+  right: -17%;
+  top: -40%;
+  background: url('../images/flower.svg');
+  width: 40px;
+  height: 40px;
+}
+.safety__suptitle {
+  margin: 20px 0 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--color-black);
+}
+
+.safety__text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--color-gray);
+}
+
+.safety__row {
+  padding-top: 48px;
+}
+
+.safety__item {
+  padding: 16px;
+}
+.safety__footer {
+  margin-top: 62px;
+  align-items: center;
+  padding: 46px 42px;
+  background: #f6f8f9;
+  border-radius: 5px;
+}
+
+.safety__detail {
+  white-space: nowrap;
+  margin: 0 66px 0 26px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--color-black);
+}
+
+@media screen and (max-width: 576px) {
+  .safety__footer {
+    justify-content: center;
+  }
+  .safety__detail {
+    white-space: normal;
+    margin: 20px 0;
+  }
+}
