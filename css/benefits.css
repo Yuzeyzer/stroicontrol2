@@ -92,3 +92,9 @@
 .benefits .slick-dots .slick-active button {
   background-color: var(--color-blue);
 }
+
+@media screen and (max-width: 576px) {
+  .slider__wrapper {
+    margin: 0;
+  }
+}

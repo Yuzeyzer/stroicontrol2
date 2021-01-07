@@ -111,7 +111,7 @@ main {
 @media screen and (max-width: 576px) {
   .nav {
     transform: translateX(100%);
-    transition: 1.5s;
+    transition: 0.5s;
     position: fixed;
     left: 0;
     top: 0;
